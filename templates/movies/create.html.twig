@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+{% block title %}Add Movie{% endblock %}
+{% block body %}
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li>Add Movie</li>
+            </ol>
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="margin-left:-12px;">Add Movie</h2>
+                    <form action="" method="post">
+                        {{ form_widget(form) }}
+                        <input class="btn btn-primary" type="submit" name="submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

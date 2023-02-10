@@ -1,0 +1,9 @@
+<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="movie-box" style="background-image: url('{{ movie.bannerImage }}')">
+        <div class="icon-box">
+            <div class="icon icon-w-image" style="background-image:url('{{ movie.profileImage }}')"></div>
+            <h4><a href="{{ path('movie_details', {'movieId': movie.id}) }}">{{ movie.title }}</a></h4>
+            <p>{{ movie.description|slice(0,255) }}</p>
+        </div>
+    </div>
+</div>

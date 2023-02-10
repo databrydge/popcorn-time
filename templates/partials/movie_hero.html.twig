@@ -1,0 +1,12 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center" style="background-image:url('{{ movie.bannerImage }}');">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h1>{{ movie.title }}</h1>
+                <h2>{{ movie.description|slice(0,128) }}...</h2>
+                <a href="#details" class="scrollto play-btn mb-4"></a>
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero -->

@@ -10,5 +10,8 @@
 /public/bundles/
 /var/
 /vendor/
-
 ###< symfony/framework-bundle ###
+
+###> Project Excludes
+/public/import/critic_reviews.csv
+###< Project Excludes

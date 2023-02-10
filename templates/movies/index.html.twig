@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block title %}Movies{% endblock %}
+{% block body %}
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/movies">Movies</a></li>
+            </ol>
+            <h2>All Movies</h2>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section id="latest-movies" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>All Movies</h2>
+                <p>Find the complete list of movies here!! Careful though, depending on DB size this page might be slow...</p>
+            </div>
+
+            <div class="row">
+                {% for movie in movies %}
+                    {%  include "movies/partials/movie_block.html.twig" with {'movie':  movie} %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
