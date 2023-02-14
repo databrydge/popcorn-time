@@ -1,20 +1,19 @@
-### Welcome to the Databrydge Exercise: 
-# :popcorn: Popcorn Time :popcorn:
+# Popcorn Time :popcorn:
+> TL;DR follow the setup [here](setup.md) to set up the application, read the [main goal](#main--mandatory-goal) (below) and submit the exercise on a forked, public repo through an open pull request, to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers.
 
-### Quick introduction
-> TL;DR follow the setup [here](setup.md) to set up the application, read the main goal (below) and submit the exercise on a forked, public repo through an open pull request, to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers.
+## Quick introduction
 
-This exercise is called, `popcorn time`, and is a simple but fun demo web-app that holds movies & reviews for those movies. Starting off with dummy data (see running the `Fixtures` in the [setup readme](setup.md#setting-up-the-database--the-docker-service--on-linux--mac-os-)) allows you to see what the app should look like.
+This exercise is called, `popcorn time`, and is a simple but fun demo web-app that holds movies & reviews for those movies. Upon installing the app you can immediately seed dummy data (as mentioned in the [setup](setup.md#setting-up-the-database--the-docker-service-on-linux--mac-os)) to the database allowing you to see what the app should look like!
 
-However, rather than filling in movies & reviews manually like a plebeian, we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two `.csv` files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
+However, rather than filling in movies & reviews manually like a plebeian, <br/>we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two **.csv** files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
 
 
-## Assignment rules for submission (**READ FIRST**)
+## Assignment rules for submission
 When it comes to the coding / solving the assignment's goals, there are no rules. Use whatever you want, from composer packages, to plugins JS,etc... all of it is allowed! <br/>
 The only rules there are, are about how to submit your final code as part of the assignment, you can read below what is expected.
 
-- Make sure you forked our repository to a repository on your own github account <br/>
-- Do not work on the default (`master`) branch, rather use a new branch to code everything on
+- Make sure you forked our repository to a repository on your own github account
+- Do not work on the default `master` branch, rather use a new branch to code everything on
 - Bonus points for whoever has regular commits instead of one big push :sweat_smile:
 - When finished with coding and all your changes have been pushed to your branch, make a PR...
 - Make sure to write a clear PR title & description explaining exactly what you did since the goals in this exercise are optional.
@@ -24,20 +23,17 @@ The only rules there are, are about how to submit your final code as part of the
 
 
 ## Set up everything for the exercise:
-> See the full explanation on how to set up [here](setup.md).
+> See the full explanation on how to set up the environment [here](setup.md).
 
 
 ## Main (& mandatory) goal
-In the `public\import` directory, you will find two files:
-- `movies.csv`, holds a large list of movies taken from [rotten tomatoes](https://www.rottentomatoes.com/)
-- `critic_reviews.zip`, holds a large list of reviews on those movies, also taken from [rotten tomatoes](https://www.rottentomatoes.com/) <br/>
-*(unzip this one to reveal `critic_reviews.csv`, was too big for github, don't worry the too large .csv file has been added to the .gitignore so the file will be ignored when you are pushing.)*
+In the `public\import` directory, you will find two files, the main goal is to extract all that juicy data from those files with a click of the button:
+- Extract all the movies from the **movies.csv** file & save them all in the database
+- Extract all the reviews from the **critic_reviews.csv** file, link them to the movies from the previous step & save them in the database.
 
-The main goal here is to make it possible, with the click of a button, to make the following happen:
-- Extract all the movies from the `movies.csv` file & save them all in the database
-- Extract all the reviews from the `critic_reviews.csv` file, link them to the movies from the previous step & save them in the database.
+If your code worked correctly, you should see all the movies in the web app. Of course there will be only default images since the data does not contain any links to images of the movies. (This is a fun optional challenge for those interested, see below).
 
-If your code worked correctly, you should see all the movies in the web app. Of course there will be only default images since the data does not contian links to images. (This is a fun optional challenge for those interested).
+> To see an explanation of the exact data held in the two .csv files, you can go to [this](public/import/README.md) readme.
 
 
 ## Optional goals
