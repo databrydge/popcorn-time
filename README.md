@@ -50,6 +50,7 @@ Let's make use of some of your API skills and make a function that, on the click
 
 Let's use themoviedb.org, they have a beautiful API that allows us to get all that data. You can find their excellent api documentation over [here](https://developers.themoviedb.org/3/getting-started/introduction). I already set up the API_KEY in the `.env` file for you so you don't need to waste time making an account.
 
+---
 
 ### Find movies easily
 With our ~18.000 movies in the databse, that "all movies" page is getting a bit ridiculously slow to load, no? Nevermind the finding of a movie & opening its details page..
