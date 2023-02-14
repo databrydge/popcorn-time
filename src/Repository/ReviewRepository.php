@@ -39,7 +39,7 @@ class ReviewRepository extends ServiceEntityRepository implements ReviewReposito
     public function getLatestReviews(int $limit = 6): array
     {
         return $this->createQueryBuilder('r')
-            ->orderBy('r.id', 'DESC')
+            ->orderBy('r.reviewDate', 'DESC')
             ->setMaxResults($limit)
             ->getQuery()
             ->getResult();

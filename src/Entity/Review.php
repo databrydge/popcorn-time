@@ -144,8 +144,15 @@ class Review
         $this->reviewAuthorCompany = $reviewAuthorCompany;
     }
 
-    public function setTimestamps() {
+    public function setTimestamps(): void
+    {
         $this->setCreatedAt();
         $this->setUpdatedAt();
+    }
+
+    public function getReadableReviewDate(): ?string
+    {
+        $date = $this->reviewDate;
+        return $date?->format('d M Y') ?? null;
     }
 }

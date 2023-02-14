@@ -15,7 +15,7 @@ class ReviewController extends AbstractController
 {
     public function __construct(
        private MovieRepositoryInterface $movieRepository,
-        private ReviewRepositoryInterface $reviewRepository
+       private ReviewRepositoryInterface $reviewRepository
     ) {
     }
 

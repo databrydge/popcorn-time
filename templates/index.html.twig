@@ -86,15 +86,7 @@
                 <div class="accordion-list">
                     <ul>
                         {% for review in latestReviews %}
-                            <li>
-                                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-{{ review.id }}">{{ review.title }} ({{ review.movie.title }}) <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="accordion-list-{{ review.id }}" class="collapse {% if loop.first %}show{% endif %}" data-bs-parent=".accordion-list">
-                                    <p>
-                                        {{ review.description }}
-                                    </p>
-                                    <p><strong>~ {{ review.author }}</strong></p>
-                                </div>
-                            </li>
+                            {%  include "reviews/partials/review_block.html.twig" with {'review':  review} %}
                         {% endfor %}
                     </ul>
                 </div>

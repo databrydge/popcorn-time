@@ -7,6 +7,9 @@ This exercise is called, `popcorn time`, and is a simple but fun demo web-app th
 
 However, rather than filling in movies & reviews manually like a plebeian, <br/>we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two **.csv** files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
 
+## Set up everything for the exercise:
+> See the full explanation on how to set up the environment [here](setup.md).
+
 
 ## Assignment rules for submission
 When it comes to the coding / solving the assignment's goals, there are no rules. Use whatever you want, from composer packages, to plugins JS,etc... all of it is allowed! <br/>
@@ -21,17 +24,13 @@ The only rules there are, are about how to submit your final code as part of the
 - (make sure the repository is either public or our accounts have been invited as collaborators otherwise we will not be able to see the code.)
 - The github accounts are the following: [rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)
 
-
-## Set up everything for the exercise:
-> See the full explanation on how to set up the environment [here](setup.md).
-
-
 ## Main (& mandatory) goal
-In the `public\import` directory, you will find two files, the main goal is to extract all that juicy data from those files with a click of the button:
+In the `public\import` directory, you will find two files, the main goal is to extract all that juicy data from those files with a click of a button:
 - Extract all the movies from the **movies.csv** file & save them all in the database
 - Extract all the reviews from the **critic_reviews.csv** file, link them to the movies from the previous step & save them in the database.
+- The navbar holds a section `Read from file`, use the buttons below this section to trigger the reading of the respective .csv files 
 
-If your code worked correctly, you should see all the movies in the web app. Of course there will be only default images since the data does not contain any links to images of the movies. (This is a fun optional challenge for those interested, see below).
+If your code worked correctly, you should see all the movies in the web app (only latest on the homepage). Of course there will be only default images since the data does not contain any links to images of the movies. (This is a fun optional challenge for those interested, see below).
 
 > To see an explanation of the exact data held in the two .csv files, you can go to [this](public/import/README.md) readme.
 

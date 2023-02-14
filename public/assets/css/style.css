@@ -1681,3 +1681,31 @@ input[type=number]:focus,
   top:-4px;
   margin-right: 12px;
 }
+
+
+.label-content-rating {
+  background-color: #e9e9ef;
+  padding: 4px;
+  color: #777;
+  font-weight: 400;
+  font-size: .8em;
+  margin-left: 12px;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.text-lighter {
+  font-size:.9em;
+  opacity:.7;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.accordion-list-no-margins {
+  margin:0 !important;
+  padding:0 !important;
+}

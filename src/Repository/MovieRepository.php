@@ -38,7 +38,7 @@ class MovieRepository extends ServiceEntityRepository implements MovieRepository
     public function getLatestMovies(int $limit = 6): array
     {
         return $this->createQueryBuilder('m')
-            ->orderBy('m.id', 'DESC')
+            ->orderBy('m.releaseDate', 'DESC')
             ->setMaxResults($limit)
             ->getQuery()
             ->getResult();

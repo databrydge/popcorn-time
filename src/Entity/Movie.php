@@ -5,8 +5,6 @@ namespace App\Entity;
 use App\Repository\MovieRepository;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
-use Carbon\CarbonInterval;
-use Carbon\CarbonPeriod;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
@@ -258,11 +256,27 @@ class Movie
         );
     }
 
+    public function getReadableReleaseDate(): string
+    {
+        $date = $this->releaseDate;
+        return $date->format('d M Y');
+    }
+
     public function fill(array $arr): void
     {
         $properties = get_object_vars($this);
         foreach ($properties as $name => $currentValue) {
             $this->$name = $arr[$name] ?? null;
         }
+    }
+
+    public function getCleanFormattedActors(): string
+    {
+        $actorsArray = explode(",", $this->actors);
+        foreach($actorsArray as &$actorString) {
+            $actorString = trim($actorString);
+        }
+
+        return implode(", ", $actorsArray);
     }
 }
