@@ -2,12 +2,11 @@
 # :popcorn: Popcorn Time :popcorn:
 
 ### Quick introduction
-> TL;DR follow the setup [here](setup.md) to set up the application, read the [main goal](#main---mandatory--goal) and submit the exercise on a forked, public repo through an open pull request, to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers.
----
+> TL;DR follow the setup [here](setup.md) to set up the application, read the main goal (below) and submit the exercise on a forked, public repo through an open pull request, to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers.
 
-This exercise is called, `popcorn time`, and is a simple but fun demo web-app that holds movies & reviews for those movies. Starting off with dummy data (see running the `Fixtures` in the [setup readme]((setup.md#setting-up-the-database--the-docker-service--on-linux--mac-os-))) allows you to see what the app should look like.
+This exercise is called, `popcorn time`, and is a simple but fun demo web-app that holds movies & reviews for those movies. Starting off with dummy data (see running the `Fixtures` in the [setup readme](setup.md#setting-up-the-database--the-docker-service--on-linux--mac-os-) allows you to see what the app should look like.
 
-However, rather than filling in movies & reviews manually like a plebeian, we are going to make this app get :superhero: superpowers :superhero_woman: by reading in two `.csv` files, each containing a metric buttload of data! :zap: :zap: (ex.: >110.000 reviews). 
+However, rather than filling in movies & reviews manually like a plebeian, we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two `.csv` files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
 
 
 ## Assignment rules for submission (**READ FIRST**)
