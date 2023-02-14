@@ -44,15 +44,15 @@ If your code worked correctly, you should see all the movies in the web app. Of 
 Below are some optional goals, not doing these does not give a negative impact on your chances at Databrydge. We have enough code off of the main goal to rate your skills. But, for those of you that are having fun with the exercise, here is some extra fun to be had! :wink:
 
 ### Metadata
-Those movies in the web app UI look really weird with those default images, don't they? :sweat_smile: You see that button in the navbar, called `Refresh metadata!`? Do you see where I am going with this.....?
+Those movies in the web app UI look really weird with those default images, don't they? You see that button in the navbar, called `Refresh metadata!`? Do you see where I am going with this.....?
 
 Let's make use of some of your API skills and make a function that, on the click of that button, will go over all the movies in the database and simply add some of the metadata. In this case, we want to add pictures, pictures galore! Each movie entity can hold a `bannerImage` and a `profileImage`. The bannerImage is the wide one used in the hero of the details page & the hover effect on the home page, whereas the profile Image is used in the rectangle and bubble display.  
 
-Let's use themoviedb.org, they have a beautiful API that allows us to get all that data. You can find their excellent api documentation over [here](https://developers.themoviedb.org/3/getting-started/introduction). I already set up the API_KEY in the `.env` file for you so you don't need to waste time making an account :wink:.
+Let's use themoviedb.org, they have a beautiful API that allows us to get all that data. You can find their excellent api documentation over [here](https://developers.themoviedb.org/3/getting-started/introduction). I already set up the API_KEY in the `.env` file for you so you don't need to waste time making an account.
 
 
 ### Find movies easily
-With our ~18.000 movies in the databse, that "all movies" page is getting a bit ridiculously slow to load, no? Nevermind the finding of a movie & opening its details page.. :cold_sweat:
+With our ~18.000 movies in the databse, that "all movies" page is getting a bit ridiculously slow to load, no? Nevermind the finding of a movie & opening its details page..
 
 #### Modern style solution?
 - Add a search bar in the navigation bar, feel free to remove the all movies link, that one is useless now :sweat_smile:
