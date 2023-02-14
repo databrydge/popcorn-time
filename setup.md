@@ -42,4 +42,9 @@ All the credentials for the database connection can be found inside the `.env` f
 
 
 ### Done!
-Grab yourself a cup of :coffee: or :tea: and a :cookie: you're good to go & get started with the exercise!
+You should see the homepage of the app now and it should look something like this:
+![Homepage preview screenshot](public/assets/img/homepage.png)
+
+
+Grab yourself a cup of :coffee: or :tea: and a :cookie: you're good to go & get started with the exercise!<br/>
+Back to the [readme](README.md).
