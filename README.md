@@ -41,7 +41,7 @@ If your code worked correctly, you should see all the movies in the web app. Of 
 
 
 ## Optional goals
-Below are some optional goals, not doing these does not give a negative impact on your chances at Databrydge. We have enough code off of the main goal to rate your skills. But, for those of you that are having fun with the exercise, here is some extra fun to be had! :wink:
+Below are some optional goals, not doing these, does not give a negative impact on your chances at Databrydge. We have enough code off of the main goal to rate your skills. But, for those of you that are having fun with the exercise, here is some extra fun to be had! Also, since these goals are optional, altering them or doing different additional changes to the project are all valid of course. :wink:
 
 ### Metadata
 Those movies in the web app UI look really weird with those default images, don't they? You see that button in the navbar, called `Refresh metadata!`? Do you see where I am going with this.....?

@@ -39,3 +39,7 @@ You have the option to run the docker in a WSL2 container run it through the UI 
 
 All the credentials for the database connection can be found inside the `.env` file, inside the `DATABASE_URL` constant. Simply setup your wamp to reflect that or change the credentials in the string. <br/>
 **Small note, if you are using default WAMP setup, know that the default MySQL port is going to be `3306` not `3309` as currently used in the `.env`**
+
+
+### Done!
+Grab yourself a cup of :coffee: or :tea: and a :cookie: you're good to go & get started with the exercise!
