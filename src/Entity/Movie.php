@@ -3,6 +3,10 @@
 namespace App\Entity;
 
 use App\Repository\MovieRepository;
+use Carbon\Carbon;
+use Carbon\CarbonInterface;
+use Carbon\CarbonInterval;
+use Carbon\CarbonPeriod;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
@@ -81,12 +85,12 @@ class Movie
 
     public function getBannerImage(): ?string
     {
-        return $this->bannerImage;
+        return $this->bannerImage ?? '/assets/img/defaults/banner.jpg';
     }
 
     public function getProfileImage(): ?string
     {
-        return $this->profileImage;
+        return $this->profileImage ?? sprintf('/assets/img/defaults/poster%s.jpg', random_int(1,3));
     }
 
     public function getTmdbLink(): ?string
@@ -242,5 +246,23 @@ class Movie
     public function setTimestamps() {
         $this->setCreatedAt();
         $this->setUpdatedAt();
+    }
+
+    public function getReadableRuntime(): string
+    {
+        $readableRuntime = Carbon::now()->subMinutes($this->getRuntime());
+        return $readableRuntime->diffForHumans(
+            syntax: CarbonInterface::DIFF_ABSOLUTE,
+            short: true,
+            parts: 2
+        );
+    }
+
+    public function fill(array $arr): void
+    {
+        $properties = get_object_vars($this);
+        foreach ($properties as $name => $currentValue) {
+            $this->$name = $arr[$name] ?? null;
+        }
     }
 }

@@ -48,10 +48,10 @@
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
                         <li><a class="nav-link scrollto active" href="/#intro">Home</a></li>
-                        <li><a class="nav-link scrollto" href="/movies">All Movies</a></li>
+                        <li><a class="nav-link scrollto" href="{{ path('movies') }}">All Movies</a></li>
                         <li><a class="nav-link scrollto" href="#latest-reviews">Latest Reviews</a></li>
-                        <li><a class="nav-link scrollto" href="/movies/create">Add Movie</a></li>
-                        <li><a class="nav-link scrollto" href="/reviews/create">Add Review</a></li>
+                        <li><a class="nav-link scrollto" href="{{ path('create_movie') }}">Add Movie</a></li>
+                        <li><a class="nav-link scrollto" href="{{ path('create_review') }}">Add Review</a></li>
                         <li class="dropdown"><a href="#"><span>Read from file</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li class="dropdown"><a href="#"><span>CSV</span> <i class="bi bi-chevron-right"></i></a>

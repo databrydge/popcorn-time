@@ -37,6 +37,7 @@ class CreateReviewFormType extends AbstractType
               'choice_label' => 'title',
               'multiple' => false,
               'expanded' => false,
+              'attr' => ['required' => true]
             ]);
     }
 
