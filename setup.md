@@ -19,16 +19,19 @@ Before you start, make sure you have the following installed on your machine:
 
 ## Setting up symfony to run locally
 - Open a terminal and navigate to your local project folder
+- Start off with the good & classic: `composer install`
 - Attach the domain to your proxy: `symfony proxy:domain:attach popcorntime`
 - Install the certificate: `symfony server:ca:install`
 - Run the proxy service: `symfony proxy:start`
 - Start the server: `symfony server:start` (add `-d` if you want it daemonized)
+- Now before you can connect to the server, you will need to set up your local proxy configuration, you can find the detailed guide for your OS [here](https://symfony.com/doc/current/setup/symfony_server.html#setting-up-the-local-proxy)
+- Quick tip, if you are ever stuck on the proxy not working, try turning your local proxy off and on in your settings.
 
 
 
 ## Setting up the database & the docker service (on Linux & Mac OS)
 
-- Open a terminal and navigate to your local project folder
+- Open a new terminal and navigate to your local project folder if you didn't run the server daemonized
 - Run: `sudo docker-compose up` (`sudo` not needed on mac) to install and run your docker environment <br/>
   *(add `-d` if you want to run it daemonized)*
 - Run the migrations: `symfony console doctrine:migrations:migrate` to setup the database
