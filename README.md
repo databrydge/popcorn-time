@@ -5,7 +5,7 @@
 
 This exercise is called, `popcorn time`, and is a simple but fun demo web-app that holds movies & reviews for those movies. Upon installing the app you can immediately seed dummy data (as mentioned in the [setup](setup.md#setting-up-the-database--the-docker-service-on-linux--mac-os)) to the database allowing you to see what the app should look like!
 
-However, rather than filling in movies & reviews manually like a plebeian, <br/>we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two **.csv** files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
+However, rather than filling in movies & reviews manually like a plebeian, we are going to make this app have :superhero: superpowers :superhero_woman: by reading in two **.csv** files, each containing a metric buttload of data! :zap: (ex.: >110.000 reviews). 
 
 ## Set up everything for the exercise:
 > See the full explanation on how to set up the environment [here](setup.md).
@@ -15,7 +15,7 @@ However, rather than filling in movies & reviews manually like a plebeian, <br/>
 When it comes to the coding / solving the assignment's goals, there are no rules. Use whatever you want, from composer packages, to plugins JS,etc... all of it is allowed! <br/>
 The only rules there are, are about how to submit your final code as part of the assignment, you can read below what is expected.
 
-- Follow the steps in the [setup](setup.md#get-git-set-up--the-project-files-on-your-pc) on how to get your github repoitory set up.
+- Follow the steps [here](setup.md#get-git-set-up--the-project-files-on-your-pc) to get your own repository set up correctly.
 - Do **not** fork our repository
 - Once your version of the repository is pushed, make sure you have all the history & commits of our repository intact.
 - Make sure your repository is privated and we are invited as collaborators: [rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)
