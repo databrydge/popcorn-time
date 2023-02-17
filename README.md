@@ -15,14 +15,15 @@ However, rather than filling in movies & reviews manually like a plebeian, <br/>
 When it comes to the coding / solving the assignment's goals, there are no rules. Use whatever you want, from composer packages, to plugins JS,etc... all of it is allowed! <br/>
 The only rules there are, are about how to submit your final code as part of the assignment, you can read below what is expected.
 
-- Make sure you forked our repository to a repository on your own github account
+- Follow the steps in the [setup](setup.md#get-git-set-up--the-project-files-on-your-pc) on how to get your github repoitory set up.
+- Do **not** fork our repository
+- Once your version of the repository is pushed, make sure you have all the history & commits of our repository intact.
+- Make sure your repository is privated and we are invited as collaborators: [rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)
 - Do not work on the default `master` branch, rather use a new branch to code everything on
 - Bonus points for whoever has regular commits instead of one big push :sweat_smile:
 - When finished with coding and all your changes have been pushed to your branch, make a PR...
-- Make sure to write a clear PR title & description explaining exactly what you did since the goals in this exercise are optional.
-- Do not merge the pull request, rather simply share the pull request and assign us as reviewer.
-- (make sure the repository is either public or our accounts have been invited as collaborators otherwise we will not be able to see the code.)
-- The github accounts are the following: [rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)
+- Make sure to write a clear PR title & description explaining exactly what you did since some of the goals in this exercise are optional.
+- Do not merge the pull request, rather simply share the pull request and assign us as reviewers.
 
 ## Main (& mandatory) goal
 In the `public\import` directory, you will find two files, the main goal is to extract all that juicy data from those files with a click of a button:
