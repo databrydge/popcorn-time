@@ -1,5 +1,5 @@
 # Popcorn Time :popcorn:
-> TL;DR follow the setup [here](setup.md) to set up the application, read the [main goal](#main--mandatory-goal) (below) and submit the exercise on a forked, public repo through an open pull request, to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers.
+> TL;DR follow the setup [here](setup.md) to set up the application, read the [main goal](#main--mandatory-goal) (below) and submit the exercise on a private repo through an open pull request (**please do not fork this repo**), to which you assign our accounts ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) as reviewers. Of course, make sure to invite both of us to the repository so we can see it.
 
 ## Quick introduction
 
