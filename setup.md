@@ -12,12 +12,12 @@ Before you start, make sure you have the following installed on your machine:
 ## Get Git set up & the project files on your PC
 1. Clone our repository, you can find it here: https://github.com/databrydge/popcorn-time
 2. Create a private repository on your own account named "popcorn-time"
-3. Push our repository onto your own account (make sure the history and commits of our repository are visible in yours as well
-4. Invite us ([rafaello104](https://github.com/rafaello104) & [barra66](https://github.com/barra66)) to the repository as collaborators.
+3. Push our repository onto your own account (make sure the history and commits of our repository are visible in yours as well)
+4. Invite us [barra66](https://github.com/barra66)) to the repository as collaborators.
 5. Make sure to check out into a different branch before you do any coding, for more info on why see the [rules](README.md#assignment-rules-for-submission)
 
 
-## Setting up symfony to run locally
+## Setting up Symfony to run locally
 - Open a terminal and navigate to your local project folder
 - Start off with the good & classic: `composer install`
 - Attach the domain to your proxy: `symfony proxy:domain:attach popcorntime`
@@ -38,8 +38,8 @@ Before you start, make sure you have the following installed on your machine:
 - Run the fixtures/seeders: `symfony console doctrine:fixtures:load` to fill the database with dummy data
 - Your docker is now setup, for the old school users, I added a phpmyadmin image, so you can still access that @ `127.0.0.1:8180`
 
-### For windows users
-You have the option to run the docker in a WSL2 container run it through the UI inside windows, or you can decide not to use the docker at all & use some software solution to run the databases locally like WAMP or something similar. Whichever way you want to run it on windows is up to you.
+### For Windows users
+You have the option to run the docker in a WSL2 container run it through the UI inside windows, or you can decide not to use the docker at all & use some software solution to run the databases locally like WAMP or something similar. Whichever way you want to run it on Windows is up to you.
 
 All the credentials for the database connection can be found inside the `.env` file, inside the `DATABASE_URL` constant. Simply setup your wamp to reflect that or change the credentials in the string. <br/>
 **Small note, if you are using default WAMP setup, know that the default MySQL port is going to be `3306` not `3309` as currently used in the `.env`**
