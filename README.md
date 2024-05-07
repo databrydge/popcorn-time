@@ -36,7 +36,7 @@ If your code worked correctly, you should see all the movies in the web app (onl
 > To see an explanation of the exact data held in the two .csv files, you can go to [this](public/import/README.md) readme.
 
 
-### Task 2 - Load Metadata from API
+## Task 2 - Load Metadata from API
 Those movies in the web app UI look really weird with those default images, don't they? You see that button in the navbar, called `Refresh metadata!`? Do you see where I am going with this.....?
 
 Let's make use of some of your API skills and make a function that, on the click of that button, will go over all the movies in the database and simply add some of the metadata. In this case, we want to add pictures, pictures galore! Each movie entity can hold a `bannerImage` and a `profileImage`. The bannerImage is the wide one used in the hero of the details page & the hover effect on the home page, whereas the profile Image is used in the rectangle and bubble display.  
@@ -48,7 +48,7 @@ For this task, the goal is to enhance the web app UI by integrating movie images
 ---
 
 ## Optional tasks
-Below are some optional goals, not doing these, does not give a negative impact on your chances at Databrydge. We have enough code off of the main tasks to rate your skills. But, for those of you who are having fun with the exercise, here is some extra fun to be had! Also, since these goals are optional, altering them or doing different/additional changes to the project are all valid of course. :wink:
+Below are some optional tasks, not doing these, does not give a negative impact on your chances at Databrydge. We have enough code off of the main tasks to rate your skills. But, for those of you who are having fun with the exercise, here is some extra fun to be had! Also, since these tasks are optional, altering them or doing different/additional changes to the project are all valid of course. :wink:
 
 ### Task 3 - Find movies easily
 With our ~18.000 movies in the database, that "all movies" page is getting a bit ridiculously slow to load, no? Nevermind the finding of a movie & opening its details page..
