@@ -13,7 +13,7 @@ Before you start, make sure you have the following installed on your machine:
 1. Clone our repository, you can find it here: https://github.com/databrydge/popcorn-time
 2. Create a private repository on your own account named "popcorn-time"
 3. Push our repository onto your own account (make sure the history and commits of our repository are visible in yours as well)
-4. Invite us [barra66](https://github.com/barra66)) to the repository as collaborators.
+4. Invite us ([barra66](https://github.com/barra66)) to the repository as collaborators.
 5. Make sure to check out into a different branch before you do any coding, for more info on why see the [rules](README.md#assignment-rules-for-submission)
 
 
