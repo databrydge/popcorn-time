@@ -2,14 +2,14 @@
 
 namespace App\Entity;
 
-use App\Repository\MovieRepository;
+use DateTime;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\MovieRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: MovieRepository::class)]
 class Movie
@@ -71,9 +71,19 @@ class Movie
         return $this->id;
     }
 
+    public function setId(?int $id): void
+    {
+        $this->id = $id;
+    }
+
     public function getTitle(): ?string
     {
         return $this->title;
+    }
+
+    public function setTitle(?string $title): void
+    {
+        $this->title = $title;
     }
 
     public function getDescription(): ?string
@@ -81,14 +91,29 @@ class Movie
         return $this->description;
     }
 
+    public function setDescription(?string $description): void
+    {
+        $this->description = $description;
+    }
+
     public function getBannerImage(): ?string
     {
-        return $this->bannerImage ?? '/assets/img/defaults/banner.jpg';
+        return $this->bannerImage ?? '/assets/img/defaults/banner.png';
+    }
+
+    public function setBannerImage(?string $bannerImage): void
+    {
+        $this->bannerImage = $bannerImage;
     }
 
     public function getProfileImage(): ?string
     {
-        return $this->profileImage ?? sprintf('/assets/img/defaults/poster%s.jpg', random_int(1,3));
+        return $this->profileImage ?? '/assets/img/defaults/poster.png';
+    }
+
+    public function setProfileImage(?string $profileImage): void
+    {
+        $this->profileImage = $profileImage;
     }
 
     public function getTmdbLink(): ?string
@@ -96,9 +121,19 @@ class Movie
         return $this->tmdbLink;
     }
 
+    public function setTmdbLink(?string $tmdbLink): void
+    {
+        $this->tmdbLink = $tmdbLink;
+    }
+
     public function getCreatedAt(): ?DateTime
     {
         return $this->createdAt;
+    }
+
+    public function setCreatedAt(?DateTime $createdAt = null): void
+    {
+        $this->createdAt = $createdAt ?? new DateTime();
     }
 
     public function getUpdatedAt(): ?DateTime
@@ -106,9 +141,19 @@ class Movie
         return $this->updatedAt;
     }
 
+    public function setUpdatedAt(?DateTime $updatedAt = null): void
+    {
+        $this->updatedAt = $updatedAt ?? new DateTime();
+    }
+
     public function getActors(): ?string
     {
         return $this->actors;
+    }
+
+    public function setActors(?string $actors): void
+    {
+        $this->actors = $actors;
     }
 
     public function getContentRating(): ?string
@@ -116,9 +161,19 @@ class Movie
         return $this->contentRating;
     }
 
+    public function setContentRating(?string $contentRating): void
+    {
+        $this->contentRating = $contentRating;
+    }
+
     public function getReleaseDate(): ?DateTime
     {
         return $this->releaseDate;
+    }
+
+    public function setReleaseDate(?DateTime $releaseDate): void
+    {
+        $this->releaseDate = $releaseDate;
     }
 
     public function getProductionCompany(): ?string
@@ -126,14 +181,19 @@ class Movie
         return $this->productionCompany;
     }
 
+    public function setProductionCompany(?string $productionCompany): void
+    {
+        $this->productionCompany = $productionCompany;
+    }
+
     public function getGenres(): ?string
     {
         return $this->genres;
     }
 
-    public function getRuntime(): ?int
+    public function setGenres(?string $genres): void
     {
-        return $this->runtime;
+        $this->genres = $genres;
     }
 
     /**
@@ -142,6 +202,11 @@ class Movie
     public function getReviews(): Collection
     {
         return $this->reviews;
+    }
+
+    public function setReviews(Collection $reviews): void
+    {
+        $this->reviews = $reviews;
     }
 
     public function addReview(Review $review): self
@@ -166,82 +231,8 @@ class Movie
         return $this;
     }
 
-    public function setId(?int $id): void
+    public function setTimestamps()
     {
-        $this->id = $id;
-    }
-
-    public function setTitle(?string $title): void
-    {
-        $this->title = $title;
-    }
-
-    public function setDescription(?string $description): void
-    {
-        $this->description = $description;
-    }
-
-    public function setBannerImage(?string $bannerImage): void
-    {
-        $this->bannerImage = $bannerImage;
-    }
-
-    public function setProfileImage(?string $profileImage): void
-    {
-        $this->profileImage = $profileImage;
-    }
-
-    public function setTmdbLink(?string $tmdbLink): void
-    {
-        $this->tmdbLink = $tmdbLink;
-    }
-
-    public function setCreatedAt(?DateTime $createdAt = null): void
-    {
-        $this->createdAt = $createdAt ?? new DateTime();
-    }
-
-    public function setUpdatedAt(?DateTime $updatedAt = null): void
-    {
-        $this->updatedAt = $updatedAt ?? new DateTime();
-    }
-
-    public function setReviews(Collection $reviews): void
-    {
-        $this->reviews = $reviews;
-    }
-
-    public function setActors(?string $actors): void
-    {
-        $this->actors = $actors;
-    }
-
-    public function setContentRating(?string $contentRating): void
-    {
-        $this->contentRating = $contentRating;
-    }
-
-    public function setReleaseDate(?DateTime $releaseDate): void
-    {
-        $this->releaseDate = $releaseDate;
-    }
-
-    public function setProductionCompany(?string $productionCompany): void
-    {
-        $this->productionCompany = $productionCompany;
-    }
-
-    public function setGenres(?string $genres): void
-    {
-        $this->genres = $genres;
-    }
-
-    public function setRuntime(?int $runtime): void
-    {
-        $this->runtime = $runtime;
-    }
-
-    public function setTimestamps() {
         $this->setCreatedAt();
         $this->setUpdatedAt();
     }
@@ -249,6 +240,7 @@ class Movie
     public function getReadableRuntime(): string
     {
         $readableRuntime = Carbon::now()->subMinutes($this->getRuntime());
+
         return $readableRuntime->diffForHumans(
             syntax: CarbonInterface::DIFF_ABSOLUTE,
             short: true,
@@ -256,9 +248,20 @@ class Movie
         );
     }
 
+    public function getRuntime(): ?int
+    {
+        return $this->runtime;
+    }
+
+    public function setRuntime(?int $runtime): void
+    {
+        $this->runtime = $runtime;
+    }
+
     public function getReadableReleaseDate(): string
     {
         $date = $this->releaseDate;
+
         return $date->format('d M Y');
     }
 
@@ -273,7 +276,7 @@ class Movie
     public function getCleanFormattedActors(): string
     {
         $actorsArray = explode(",", $this->actors);
-        foreach($actorsArray as &$actorString) {
+        foreach ($actorsArray as &$actorString) {
             $actorString = trim($actorString);
         }
 
