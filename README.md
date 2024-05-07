@@ -12,7 +12,7 @@ However, rather than filling in movies & reviews manually like a plebeian, we ar
 
 
 ## Assignment rules for submission
-When it comes to coding / solving the assignment's goals, there are no rules. Use whatever you want, from composer packages, to plugins JS, etc... all of it is allowed! <br/>
+When it comes to coding / solving the assignment's tasks, there are no rules. Use whatever you want, from composer packages, to plugins JS, etc... all of it is allowed! <br/>
 The only rules there are, are about how to submit your final code as part of the assignment, you can read below what is expected.
 
 - Follow the steps [here](setup.md#get-git-set-up--the-project-files-on-your-pc) to get your own repository set up correctly.
@@ -22,11 +22,11 @@ The only rules there are, are about how to submit your final code as part of the
 - Do not work on the default `master` branch, rather use a new branch to code everything on
 - Bonus points for whoever has regular commits instead of one big push :sweat_smile:
 - When finished with coding and all your changes have been pushed to your branch, make a PR...
-- Make sure to write a clear PR title & description explaining exactly what you did since some of the goals in this exercise are optional.
+- Make sure to write a clear PR title & description explaining exactly what you did since some of the tasks in this exercise are optional.
 - Do not merge the pull request, rather simply share the pull request and assign us as reviewers.
 
 ## Task 1 - Load data from CSV files
-In the `public\import` directory, you will find two files, the main goal is to extract all that juicy data from those files with a click of a button:
+In the `public\import` directory, you will find two files, the goal is to extract all that juicy data from those files with a click of a button:
 - Extract all the movies from the **movies.csv** file & save them all in the database
 - Extract all the reviews from the **critic_reviews.csv** file, link them to the movies from the previous step & save them in the database.
 - The navbar holds a section `Read from file`, use the buttons below this section to trigger the reading of the respective .csv files 
@@ -48,7 +48,7 @@ For this task, the goal is to enhance the web app UI by integrating movie images
 ---
 
 ## Optional tasks
-Below are some optional goals, not doing these, does not give a negative impact on your chances at Databrydge. We have enough code off of the main goal to rate your skills. But, for those of you who are having fun with the exercise, here is some extra fun to be had! Also, since these goals are optional, altering them or doing different/additional changes to the project are all valid of course. :wink:
+Below are some optional goals, not doing these, does not give a negative impact on your chances at Databrydge. We have enough code off of the main tasks to rate your skills. But, for those of you who are having fun with the exercise, here is some extra fun to be had! Also, since these goals are optional, altering them or doing different/additional changes to the project are all valid of course. :wink:
 
 ### Task 3 - Find movies easily
 With our ~18.000 movies in the database, that "all movies" page is getting a bit ridiculously slow to load, no? Nevermind the finding of a movie & opening its details page..
